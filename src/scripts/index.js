@@ -55,12 +55,12 @@ function setRestaurantListElement(restaurant) {
 
   restaurantLocation.classList.add('restaurant-location');
   restaurantLocationName.textContent = restaurant.city;
-  restaurantLocationIcon.src = '../icons/location.png';
+  restaurantLocationIcon.src = 'icons/location.png';
   restaurantLocationIcon.alt = 'location';
 
   restaurantRating.classList.add('restaurant-rating');
   restaurantRatingScore.textContent = restaurant.rating;
-  restaurantRatingIcon.src = '../icons/star.png';
+  restaurantRatingIcon.src = 'icons/star.png';
   restaurantRatingIcon.alt = 'rating';
 
   restaurantName.classList.add('restaurant-name');
