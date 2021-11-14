@@ -65,7 +65,7 @@ function setRestaurantListElement(restaurant) {
 
   restaurantName.classList.add('restaurant-name');
   restaurantName.textContent = restaurant.name;
-  restaurantName.setAttribute('href', '#');
+  restaurantName.setAttribute('href', '#main');
 
   restaurantDescription.classList.add('restaurant-description');
   restaurantDescription.textContent = restaurant.description;
