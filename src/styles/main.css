@@ -126,11 +126,11 @@ li > a {
   align-items: center;
   text-align: left;
   width: 100%;
-  min-height: 100vh;
+  min-height: 450px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../public/images/heros/hero-image_4.jpg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -207,7 +207,7 @@ main > .content {
 }
 
 .explore > .explore-label {
-  padding: 72px 0;
+  padding: 46px 0;
   font-size: 32px;
   font-weight: bold;
 }

@@ -15,6 +15,7 @@ document.body.addEventListener('click', (e) => {
 
   if (drawer.classList.contains('show-drawer')) {
     menu.textContent = 'X';
+    menu.ariaLabel = 'Close Navigation';
   } else {
     menu.textContent = '☰';
   }
