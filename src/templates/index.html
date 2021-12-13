@@ -9,45 +9,29 @@
       content="Website katalog restoran yang digunakan untuk mencari informasi tentang restoran-restoran seperti rating, lokasi, dan deskripsi"
     />
     <meta name="author" content="Muhammad Ali Mustofa" />
-    <meta
-      name="keywords"
-      content="restoran, makanan, minuman, rating, lokasi"
-    />
+    <meta name="keywords" content="restoran, makanan, minuman, rating, lokasi" />
+    <meta name="theme-color" content="#f9e4c8" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
     <title>Wheeat</title>
   </head>
   <body>
-    <a href="#main" class="skip-link">Menuju Konten</a>
+    <a href="#explore-heading" class="skip-link">Menuju Konten</a>
     <header>
       <div class="brand-logo">
         <a href="#">Wheeat</a>
       </div>
       <nav>
-        <a class="menu" href="#" aria-label="Show Navigation">☰</a>
-        <ul class="drawer">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Favorite</a></li>
+        <button id="hamburgerButton" aria-label="Show Navigation">☰</button>
+        <ul id="navigationDrawer">
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
           <li><a href="https://github.com/alimustofa-am">About Us</a></li>
         </ul>
       </nav>
     </header>
-    <div class="hero">
-      <div class="hero-inner">
-        <h1 class="hero-title">Membantumu menemukan restoran terbaik</h1>
-        <p class="hero-desc">
-          Cari informasi tentang restoran yang ingin dikunjungi <br />untuk
-          menghindari ekspektasi yang berlebihan.
-        </p>
-        <a class="cta" href="#main">Temukan sekarang</a>
-      </div>
-    </div>
-    <main id="main">
-      <section class="content">
-        <div class="explore">
-          <h2 class="explore-label">Explore Restaurant</h2>
-          <div class="restaurant-list"></div>
-        </div>
-      </section>
-    </main>
+    <main id="main"></main>
     <footer>
       <p>Copyright © 2021 - Wheeat</p>
     </footer>
