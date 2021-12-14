@@ -14,7 +14,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
       <div class='restaurant-info'>
         <div class='restaurant-detail'>
           <h2 class='restaurant-name' tabindex='0'>${restaurant.name}</h2>
-          <p>${restaurant.address}, ${restaurant.city}</p>
+          <p tabindex='0'>${restaurant.address}, ${restaurant.city}</p>
           <div class='restaurant-rating-location'>
             <div class='restaurant-rating'>
               <img src='icons/star.png' alt='Restaurant rating' tabindex='0'>
@@ -27,7 +27,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
           </div>
         </div>
         <div class='restaurant-categories'>
-          <h3>Kategori</h3>
+          <h3 tabindex='0'>Kategori</h3>
           <ul>
 
           </ul>
@@ -40,11 +40,11 @@ const createRestaurantDetailTemplate = (restaurant) => `
   </section>
   <section>
     <div class='restaurant-overview'>
-      <h3>Tentang "${restaurant.name}"</h3>
-      <p>${restaurant.description}</p>
+      <h3 tabindex='0'>Tentang "${restaurant.name}"</h3>
+      <p tabindex='0'>${restaurant.description}</p>
     </div>
     <div class='restaurant-menus'>
-      <h3>Restaurant Menu</h3>
+      <h3 tabindex='0'>Restaurant Menu</h3>
       <div class='restaurant-menu-container'>
 
       </div>
@@ -52,7 +52,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
   </section>
   <section>
     <div class='restaurant-reviews'>
-      <h3>Customer Reviews</h3>
+      <h3 tabindex='0'>Customer Reviews</h3>
       <div class='customer-review-container'>
 
       </div>
@@ -62,13 +62,13 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantDetailCategoriesTemplate = (category) => `
   <li>
-    <p>${category.name}</p>
+    <p tabindex='0'>${category.name}</p>
   </li>
 `;
 
 const createRestaurantDetailMenusTemplate = (menu) => `
   <div class='restaurant-menu-${menu}'>
-    <h4>${menu}</h4>
+    <h4 tabindex='0'>${menu}</h4>
     <ul>
       
     </ul>
@@ -78,15 +78,15 @@ const createRestaurantDetailMenusTemplate = (menu) => `
 const createRestaurantDetailMenuCategoryTemplate = (menu) => `
   <li>
     <img src='icons/menu-book.png' alt='Restaurant menu'>
-    <p>${menu.name}</p>
+    <p tabindex='0'>${menu.name}</p>
   </li>
 `;
 
 const createRestaurantDetailCustomerReviewsTemplate = (customerReview) => `
   <div class='restaurant-customer-review'>
-    <p>${customerReview.name}</p>
-    <p>"${customerReview.review}"</p>
-    <p>${customerReview.date}</p>
+    <p tabindex='0'>${customerReview.name}</p>
+    <p tabindex='0'>"${customerReview.review}"</p>
+    <p tabindex='0'>${customerReview.date}</p>
   </div>
 `;
 

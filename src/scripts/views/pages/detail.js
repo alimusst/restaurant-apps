@@ -7,7 +7,6 @@ import {
   createRestaurantDetailMenusTemplate,
   createRestaurantDetailMenuCategoryTemplate,
   createRestaurantDetailCustomerReviewsTemplate,
-  createFavoriteButtonTemplate,
 } from '../templates/template-creator';
 
 const Detail = {
@@ -31,12 +30,15 @@ const Detail = {
     });
 
     const restaurantMenus = document.querySelector('.restaurant-menu-container');
+    // eslint-disable-next-line no-restricted-syntax
     for (const restaurantMenuCategory in restaurant.menus) {
       if (Object.hasOwnProperty.call(restaurant.menus, restaurantMenuCategory)) {
         const menus = restaurant.menus[restaurantMenuCategory];
         restaurantMenus.innerHTML += createRestaurantDetailMenusTemplate(restaurantMenuCategory);
 
-        const restaurantMenu = document.querySelector(`.restaurant-menu-${restaurantMenuCategory} > ul`);
+        const restaurantMenu = document.querySelector(
+          `.restaurant-menu-${restaurantMenuCategory} > ul`
+        );
         menus.forEach((menu) => {
           restaurantMenu.innerHTML += createRestaurantDetailMenuCategoryTemplate(menu);
         });

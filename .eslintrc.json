@@ -11,17 +11,10 @@
   },
   "rules": {
     "no-console": "off",
-    "comma-dangle": [
-      "error",
-      {
-        "functions": "never"
-      }
-    ],
-    "no-underscore-dangle": [
-      "error",
-      {
-        "allow": true
-      }
-    ]
+    "comma-dangle": ["error", "only-multiline"],
+    "no-underscore-dangle": 0,
+    "operator-linebreak": ["error", "after"],
+    "no-restricted-globals": ["error", "event"],
+    "no-param-reassign": ["error", { "props": false }]
   }
 }
