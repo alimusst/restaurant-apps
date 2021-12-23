@@ -94,8 +94,8 @@ const createRestaurantItemTemplate = (restaurant) => `
   <article class='restaurant-item'>
     <div class='restaurant-item-thumb'>
       <img 
-        class='restaurant-thumb' 
-        src='${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}'
+        class='lazyload restaurant-thumb' 
+        data-src='${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}'
         alt='Restaurant ${restaurant.name}'
         tabindex='0'
       >
