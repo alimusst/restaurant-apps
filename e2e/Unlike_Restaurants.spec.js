@@ -8,7 +8,11 @@ Before(({ I }) => {
 
 Scenario('Unlike a restaurant', async ({ I }) => {
   I.seeElement('.content');
+
   I.seeElement('.restaurant-name');
+
+  I.wait(1);
+
   const firstRestaurant = locate('.restaurant-name').first();
   const firstRestaurantName = await I.grabTextFrom(firstRestaurant);
   I.click(firstRestaurant);
