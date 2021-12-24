@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.bb06819adc3071be25d08c519bfd110b.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.fd84af7f7809ec57aa0eaf60e9ae5ccc.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.96cfc7ef467fab2a9fa5aad304f54fc8.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.72643ddf09b6bf7266a2b927103430b7.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.df37375d8d9b6fb9fcfb59a57cec98ff.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.69ba63efcd3b817f2404aede00cd1687.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Wheeat App Lite",
+  "short_name": "Wheeat Lite",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Restaurant Catalogue",
+  "background_color": "#ffffff",
+  "theme_color": "#f9e4c8"
+}
